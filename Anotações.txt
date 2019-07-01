@@ -2,6 +2,8 @@ HTML
 
 A linguagem HTML serve para marcar conteúdo, ou seja, especificar o que cada letra, palavra e frase significa. Usamos ela para criar páginas pois, assim, o navegador e outras ferramentas que trabalham na Internet conseguem analisar e processar nosso conteúdo, apresentando-o de forma adequada para os usuários.
 
+Sobre font-family: Toda declaração font-family pode ter, além do nome da fonte que se deseja usar, uma alternativa que seja o tipo de fonte que se deseja usar. Assim, se o navegador não encontrar a fonte desejada, pode recorrer a uma fonte parecida.
+
 Termos
 
 metainformações = informações de código para o computador
@@ -11,3 +13,6 @@ Tags
 
 <em> = itálico
 <strong> = negrito
+<blockquote> = próprio para blocos de texto em que há citações.
+      <cite> auxiliar do blockquote, usado para indicar o autor da citação.
+
