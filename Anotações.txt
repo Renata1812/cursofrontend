@@ -1,0 +1,13 @@
+HTML
+
+A linguagem HTML serve para marcar conteúdo, ou seja, especificar o que cada letra, palavra e frase significa. Usamos ela para criar páginas pois, assim, o navegador e outras ferramentas que trabalham na Internet conseguem analisar e processar nosso conteúdo, apresentando-o de forma adequada para os usuários.
+
+Termos
+
+metainformações = informações de código para o computador
+conteúdo = informações de código para o usuário
+
+Tags
+
+<em> = itálico
+<strong> = negrito
