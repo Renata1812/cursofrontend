@@ -16,3 +16,16 @@ Tags
 <blockquote> = próprio para blocos de texto em que há citações.
       <cite> auxiliar do blockquote, usado para indicar o autor da citação.
 
+
+Para Css:
+
+padding : aumenta o espaço dentro do elemento
+
+border: atribui bordas ao elemento. Deve-se definir o tamanho em PX, a cor (ex: #FFFFFF) e o tipo, que pode ser solid (linha contínua), dashed (tracejada grande), dotted (tracejada pequena).
+
+margin: controla o espaço entre elementos.
+width e height: largura e altura de um elemento só
+
+box-sizing: controla como a altura e largura devem ser calculadas
+
+line-heigth: controla o espaço entre as linhas de um texo.
