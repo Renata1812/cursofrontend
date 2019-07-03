@@ -29,3 +29,5 @@ width e height: largura e altura de um elemento só
 box-sizing: controla como a altura e largura devem ser calculadas
 
 line-heigth: controla o espaço entre as linhas de um texo.
+
+display: usado para alinhar um elemento (inline) ou empilhá-los (block). Há tambem o inline-block que permite configurar o tamanho do inline
