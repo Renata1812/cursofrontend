@@ -7,7 +7,7 @@ body{
 
 }
 
-div{
+.div-textos{
 
 	width: 720px;
 	margin-left: auto;
@@ -35,7 +35,7 @@ main a{
 
 }
 
-main h1{
+.h1-principal{
 
 	text-align: center;
 	color: rgb(255,255,255);
@@ -43,6 +43,7 @@ main h1{
 	padding: 25px;
 	border-bottom: 10px solid black;
 	font-size: 60px;
+	text-transform: uppercase;
 
 }
 
@@ -60,7 +61,7 @@ blockquote, aside, footer{
 
 }
 
-blockquote{
+.citacao{
 
 	background-color: #D9E5E3;
 	border: 10px solid #C2CCCA;
@@ -71,36 +72,86 @@ blockquote{
 
 }
 
-aside{
+article footer{
+
+	margin: 0;
+
+}
+
+article{
+
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.leia-mais{
+
+	font-size: 17pt;
+	border: 2px solid #808080;
+	padding: 8px;
+	margin: 16px; 
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #851944;
+	display: block;
+
+}
+
+.navegacao{
 
 	background-color: #3C1D3D;
 	color: #F2FFFC;
 	text-align: center;
 	list-style-type:none;
+	padding: 20px;
 }
 
-aside a{
+.navegacao a{
 
 	color: inherit;
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
+	text-transform: lowercase;
 }
 
-aside h1{
+
+.navegacao h1{
 
 	font-size: 30px;
 	margin-bottom: 25px;
 
 }
-aside li{
+
+.icones-sociais li{
 
 	display: inline-block;
-	
+	margin-top: 15px;
+
 }
 
-footer{
+.icones-sociais a{
 
-	background-color: rgb(0,0,0);
-	color: #F2FFFC;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	color: transparent;
+
+}
+
+.github{
+
+	background-image: url(github.png);
+}
+
+.twitter{
+
+	background-image: url(twitter.png);
+}
+
+.linkedin{
+
+	background-image: url(linkedin.png);
 }
 
 nav a{
@@ -118,4 +169,10 @@ strong{
 em{
 
 	font-style: italic;
+}
+
+#rodape-pagina{
+
+	background-color: rgb(0,0,0);
+	color: #F2FFFC;
 }

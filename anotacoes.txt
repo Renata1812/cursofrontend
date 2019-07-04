@@ -31,3 +31,19 @@ box-sizing: controla como a altura e largura devem ser calculadas
 line-heigth: controla o espaço entre as linhas de um texo.
 
 display: usado para alinhar um elemento (inline) ou empilhá-los (block). Há tambem o inline-block que permite configurar o tamanho do inline
+
+text-transform: uppercase/lowercase; = deixa o texto todo em maiúsculo/minúsculo.
+
+text-ident = desloca o texto para a direita ou esquerda com o valor que vc quiser
+
+# = seletor de id's
+. (ponto) = seletor de classes
+
+Conflitos
+
+duas classes juntas em um mesmo elemento com regras conflituosas: o último escrito no código será atendido.
+
+uma classe e um id juntos em um mesmo elemento e com regras conflituosas: o id sempre será atendido conforme a regra da especificidade.
+
+O mais específico sempre será o atendido, e uma tag entrando em conflito com uma classe ou id nunca será prioridade pois tags são genéricas e vagas.
+
