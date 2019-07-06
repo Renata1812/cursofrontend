@@ -11,6 +11,7 @@ main{
 
 	float: left;
 	width: 85%;
+	padding-bottom: 80px;
 
 }
 
@@ -127,8 +128,10 @@ article{
 
 	float: right;
 	border: 10px solid #000000;
-	width:15%;
 	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 0;
 
 
 }
@@ -144,8 +147,10 @@ article{
 	margin: 0px;
 	border: 10px solid #000000;
 	border-top: none;
-	width:15%;
 	box-sizing: border-box;
+	width:15%;
+	position: relative;
+	top: 310px;
 }
 
 .navegacao a{
@@ -216,4 +221,9 @@ em{
 	background-color: rgb(0,0,0);
 	color: #F2FFFC;
 	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0; 
+	width: 100%; 
 }

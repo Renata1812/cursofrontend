@@ -42,6 +42,11 @@ obs: todos os floats que colocamos em sequência formam uma linha
 clear: dá a regra de quais elementos ficam limitados a não serem atingidos pelo float de outro elemento
    clear: both = não importa em qual lado os floats estejam, o elemento com essa regra sempre irá para baixo dele
 
+position: uma forma mais livre e menos limitada de mover os objetos pelo espaço.
+     relative: ? mantém no fluxo da página e se posiciona em relação a sua posição original
+     absolute: ? posiciona o elemento sem as limitações do fluxo da página.
+     fixed: o elemento fica fixo na tela para sempre
+
 # = seletor de id's
 . (ponto) = seletor de classes
 
