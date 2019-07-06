@@ -7,6 +7,13 @@ body{
 
 }
 
+main{
+
+	float: left;
+	width: 85%;
+
+}
+
 .div-textos{
 
 	width: 720px;
@@ -27,6 +34,7 @@ h1, h2{
 h2{
 
 	font-size: 30px;
+	clear: both;
 }
 
 main a{
@@ -72,6 +80,22 @@ blockquote, aside, footer{
 
 }
 
+.fiat{
+
+	float: right;
+}
+
+.petrobras{
+
+	float: left;
+}
+
+cite{
+
+	font-style: italic;
+	float: right;
+}
+
 article footer{
 
 	margin: 0;
@@ -99,6 +123,16 @@ article{
 
 }
 
+.img-eu{
+
+	float: right;
+	border: 10px solid #000000;
+	width:15%;
+	box-sizing: border-box;
+
+
+}
+
 .navegacao{
 
 	background-color: #3C1D3D;
@@ -106,6 +140,12 @@ article{
 	text-align: center;
 	list-style-type:none;
 	padding: 20px;
+	float: right;
+	margin: 0px;
+	border: 10px solid #000000;
+	border-top: none;
+	width:15%;
+	box-sizing: border-box;
 }
 
 .navegacao a{
@@ -175,4 +215,5 @@ em{
 
 	background-color: rgb(0,0,0);
 	color: #F2FFFC;
+	clear: both;
 }

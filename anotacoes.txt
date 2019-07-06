@@ -36,14 +36,19 @@ text-transform: uppercase/lowercase; = deixa o texto todo em maiúsculo/minúsculo
 
 text-ident = desloca o texto para a direita ou esquerda com o valor que vc quiser
 
+float: permite que o elemento "flutue" para qualquer lado sem restrições de conceito
+obs: todos os floats que colocamos em sequência formam uma linha
+
+clear: dá a regra de quais elementos ficam limitados a não serem atingidos pelo float de outro elemento
+   clear: both = não importa em qual lado os floats estejam, o elemento com essa regra sempre irá para baixo dele
+
 # = seletor de id's
 . (ponto) = seletor de classes
 
-Conflitos
+Conflitos (class, id e tag)
 
 duas classes juntas em um mesmo elemento com regras conflituosas: o último escrito no código será atendido.
 
 uma classe e um id juntos em um mesmo elemento e com regras conflituosas: o id sempre será atendido conforme a regra da especificidade.
 
 O mais específico sempre será o atendido, e uma tag entrando em conflito com uma classe ou id nunca será prioridade pois tags são genéricas e vagas.
-
