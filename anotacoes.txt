@@ -1,4 +1,4 @@
-HTML
+HTML I
 
 A linguagem HTML serve para marcar conteúdo, ou seja, especificar o que cada letra, palavra e frase significa. Usamos ela para criar páginas pois, assim, o navegador e outras ferramentas que trabalham na Internet conseguem analisar e processar nosso conteúdo, apresentando-o de forma adequada para os usuários.
 
@@ -57,3 +57,18 @@ duas classes juntas em um mesmo elemento com regras conflituosas: o último escri
 uma classe e um id juntos em um mesmo elemento e com regras conflituosas: o id sempre será atendido conforme a regra da especificidade.
 
 O mais específico sempre será o atendido, e uma tag entrando em conflito com uma classe ou id nunca será prioridade pois tags são genéricas e vagas.
+
+=========================================
+
+HTML II
+
+px: medida absoluta, não recomendada caso queira usar em elementos que devem ser flexíveis a alterações;
+
+em, %: medidas flexiveis.
+
+em: o valor desta tag é relativo ao tamanho da fonte do elemento em questão
+
+rem: equivale ao tamanho de fonte do elemento html ou, se não houver tamanho de fonte definido neste elemento, o tamanho de fonte padrão do navegador.
+
+diferença entre rem e em: rem tem uma medida única para a página inteira, é menos flexível. Já a medida em varia de acordo com o elemento que é utilizado.
+

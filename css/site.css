@@ -2,7 +2,7 @@ body{
 
 	font-family: "Crimson Text", "Times New Roman", sans-serif;
 	background-color: #F2FFFC;
-	font-size: 120%;
+	font-size: 200%;
 	line-height: 1.5;
 
 }
@@ -49,10 +49,19 @@ main a{
 	text-align: center;
 	color: rgb(255,255,255);
 	background-color: #851944;
-	padding: 25px;
-	border-bottom: 10px solid black;
-	font-size: 60px;
+	padding: 1.25rem;
+	border-bottom: .5rem solid black;
+	font-size: 100%;
 	text-transform: uppercase;
+
+}
+
+.subtitulo-principal{
+
+	font-size: 20px;
+	text-align: center;
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+	text-transform: lowercase;
 
 }
 
@@ -70,33 +79,6 @@ blockquote, aside, footer{
 
 }
 
-.citacao{
-
-	background-color: #D9E5E3;
-	border: 10px solid #C2CCCA;
-	width: 250px;
-	box-sizing: border-box;
-	border-bottom-color: #333;
-	border-right-color: transparent;
-
-}
-
-.fiat{
-
-	float: right;
-}
-
-.petrobras{
-
-	float: left;
-}
-
-cite{
-
-	font-style: italic;
-	float: right;
-}
-
 article footer{
 
 	margin: 0;
@@ -110,19 +92,6 @@ article{
 	border-bottom: 1px solid #ccc;
 }
 
-.leia-mais{
-
-	font-size: 17pt;
-	border: 2px solid #808080;
-	padding: 8px;
-	margin: 16px; 
-	text-align: center;
-	text-decoration: none;
-	color: #FFFFFF;
-	background-color: #851944;
-	display: block;
-
-}
 
 .img-eu{
 
@@ -186,17 +155,17 @@ article{
 
 .github{
 
-	background-image: url(github.png);
+	background-image: url(../imagens/github.png);
 }
 
 .twitter{
 
-	background-image: url(twitter.png);
+	background-image: url(../imagens/twitter.png);
 }
 
 .linkedin{
 
-	background-image: url(linkedin.png);
+	background-image: url(../imagens/linkedin.png);
 }
 
 nav a{
