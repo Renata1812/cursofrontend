@@ -15,6 +15,12 @@ main{
 
 }
 
+header{
+
+	position: relative;
+
+}
+
 .div-textos{
 
 	width: 720px;

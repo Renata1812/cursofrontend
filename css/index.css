@@ -1,6 +1,95 @@
 .foto-home {
     height: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
 }
+
+.palavra-home{
+    font-family: 'Shadows Into Light', cursive;
+    color: #D5447E;
+    font-weight: bold;
+    position: absolute;
+}
+
+.eficiencia {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+}
+
+.boas-praticas{
+
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+
+}
+
+.codigo-limpo{
+
+    position: absolute;
+    top: 20%;
+    left: 30%;
+
+}
+.css3{
+
+    position: absolute;
+    top: 10%;
+    left: 40%;
+
+}
+.html5{
+
+    position: absolute;
+    top: 10%;
+    right: 40%;
+
+}
+.javascript{
+
+    position: absolute;
+    top: 40%;
+    left: 26%;
+
+}
+.acessibilidade{
+
+    position: absolute;
+    top: 45%;
+    right: 36%;
+
+}
+.responsivo{
+
+    position: absolute;
+    bottom: 10%;
+    right: 35%;
+
+}
+.otimizacoes{
+
+    position: absolute;
+    top: 45%;
+    left: 36%;
+
+}
+.agilidade{
+
+    position: absolute;
+    bottom: 30%;
+    right: 25%;
+
+}
+.design{
+
+    position: absolute;
+    bottom: 24%;
+    left: 30%;
+
+}
+
 .saudacao p {
     font-size: 1.5em;
     color: #99A;
@@ -39,6 +128,30 @@
 
 .secao-inicio {
     padding: 2em;
+    position: relative;
+}
+
+.inicio-post{
+
+    background-color: #F2FFFC;
+    color: #000;
+    height: 8em;
+    width: 45em;
+    position: absolute;
+    right: 5em;
+    top: 4em;
+    padding: 1.5em;
+
+
+}
+
+.blog .mais-recente {
+    background-color: #F2FFFC;
+    width: 45em;
+}
+
+.blog .mais-recente a {
+    color: #F26;
 }
 
 .secao-inicio h2 {

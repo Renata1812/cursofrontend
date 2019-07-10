@@ -46,6 +46,7 @@ position: uma forma mais livre e menos limitada de mover os objetos pelo espaço.
      relative: ? mantém no fluxo da página e se posiciona em relação a sua posição original
      absolute: ? posiciona o elemento sem as limitações do fluxo da página.
      fixed: o elemento fica fixo na tela para sempre
+obs: os elementos com absolute irão se mover relativamente a posição do seu "pai", ou seja, se deseja deslocar uma div que está dentro de uma section, e essa section tiver uma posição definida, a div em questão irá se deslocar somente dentro do campo do seu "pai", ou seja, da section. Caso contrário, essa div irá se mover dentro do elemento mais próximo que tenha posição definida.
 
 # = seletor de id's
 . (ponto) = seletor de classes
@@ -71,4 +72,18 @@ em: o valor desta tag é relativo ao tamanho da fonte do elemento em questão
 rem: equivale ao tamanho de fonte do elemento html ou, se não houver tamanho de fonte definido neste elemento, o tamanho de fonte padrão do navegador.
 
 diferença entre rem e em: rem tem uma medida única para a página inteira, é menos flexível. Já a medida em varia de acordo com o elemento que é utilizado.
+
+bordas aredondadas
+
+border-radius: comando usado no css para deixar as bordas aredondadas. 
+-> border-radius: 10px; (todas as bordas aredondadas, quanto mais o valor, mais aredondado o elemento será)
+-> border-radius: 10px 0 10px 0; (pode tambem controlar quais pontas serão aredondadas)
+
+Obs: essas propriedades podem não funcionar corretamente em todos os navegadores. Em alguns casos pode-se reverter esssa situação colocando um comando antes da declaração do border-radius. 
+Chrome: -webkit-
+Mozila: -moz-
+Opera: -o- / -webkit-
+Safari: -webkit-
+Explorer: -ms-
+Quando o navegador não reconhece nenhum dos dois, as linhas são ignoradas e o elemento é apresentado com as bordas quadradas.
 
