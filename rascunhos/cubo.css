@@ -1,0 +1,63 @@
+.cubo{
+
+	transform-style: preserve-3d;
+	position: relative;
+	top: 100px;
+	left: 100px;
+	width: 200px;
+	height: 200px;
+	transform: rotateX(10deg) rotateY(10deg);
+	
+
+}
+
+.face{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+
+}
+
+.frente{
+
+	background-color: red;
+	transform: translateZ(100px);
+
+}
+
+.direita{
+
+	background-color: blue;
+	transform: translateX(100px) rotateY(90deg);
+	
+}
+
+.esquerda{
+
+	background-color: orange;
+	transform: translateX(-100px) rotateY(90deg);
+}
+
+.cima{
+
+	background-color: green;
+	transform: translateY(100px) rotateX(90deg);
+	
+}
+
+.baixo{
+
+	background-color: cyan;
+	transform: translateY(-100px) rotateX(90deg);
+	
+}
+
+.costa{
+
+	background-color: yellow;
+	transform: translateZ(-100px) rotateY(180deg);
+	
+}

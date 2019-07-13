@@ -85,5 +85,89 @@ Mozila: -moz-
 Opera: -o- / -webkit-
 Safari: -webkit-
 Explorer: -ms-
-Quando o navegador não reconhece nenhum dos dois, as linhas são ignoradas e o elemento é apresentado com as bordas quadradas.
+Quando o navegador não reconhece nenhum dos
+ dois, as linhas são ignoradas e o elemento é apresentado com as bordas quadradas.
 
+Transform:
+A propriedade transform permite que as mais diversas transformações sejam feitas em um determinado elemento, desde criar faixas até deixar um elemento em 3D.
+
+div{
+     transform: ...
+}
+
+rotate(30deg) = gira o elemento no número de graus que for colocado.
+
+scale(1.5) = aumentar de tamanho
+
+skew(20deg) = entorta o elemento no nú,erp de graus declarado.
+
+translate = deslocar ela para qualquer lugar
+-Demo-
+div{
+     transform: translate(10px, 50px);
+}
+
+E é possível usar todas essas propriedades juntas, separadas por um espaço.
+Transform é uma propriedade nova, portanto pode precisar do -webkit- por exemplo.
+
+Efeito 3D com transform
+
+Usa-se a função translateY, translateX e translateZ para controlar a forma que ele vai se deslocar até surtir o efeito 3D na tela, sendo o translateZ o principal responsável por trazer o efeito de aproximar o elemento da cara do usuário.
+-Demo-
+
+.bola1{
+        transform: translateZ(2px)
+} /* estará se aproximando do usuário*/
+
+.bola2{
+        transform: translateZ(2px)
+}/* estará se afastando do usuário*/
+
+A propriedade perspective é importante para controlar a perspectiva que o usuário terá na tela. Ela deve ser aplicada sempre na class pai do elemento em questão.
+-DEMO-
+
+.bolas{
+         perspective: 4px;
+}
+
+transform-style: preserve-3d - para os elementos de dentro de um container numa cena 3D também entrarem no cálculo da perspectiva. (para caso de fazer um superelemento em 3D e ele não funcionar. Coloque no pai)
+overflow: scroll (interessante para adicionar uma barra de rolagem, de forma que o conteúdo do elemento venha sendo mostrado conforme ela desce)
+
+-- Rotacionando e Deslocando um elemento--
+
+Começando por usar a propriedade:
+transform-origin: 0 0;
+
+para fazer com que o objeto rotacione pelo seu canto superior esquerdo, e não pleo centro, que é o padrão do navegador.
+
+Após configuradas os valores de altura e largura, use a seguinte fórmula para saber quais valores de translação usar na horizontal e vertical, de forma que se posicione no grau exato que vc deseja.
+
+horizontal: cos(45) * (altura - largura) + largura
+
+
+vertical: -1 * sen(45) * altura
+
+Os resultados das duas fórmulas você coloca respectivamente na propriedade translate(0, 0). E pronto.
+
+Por via de dúvidas, sempre defina o width e o height. Para achar o height some as bordas top e bottom, os paddings top e bottom e o line-height.
+
+{Border 0.25em = Top e Bottom = 0.5em
+
+Padding 1 em = Top e bottom = 2em
+
+line-height = 1em
+
+Total 3.5em}
+
+Obs: procurar saber como funciona o paralaxe.
+
+--------------------------------------------------
+Sombras
+
+text-shadow: deslocamento tamanho cor
+box-shadow: deslocamento tamanho cor
+box shadow: 0 0 1em #000, inset 0 0 .5em #FFF
+
+inset: sombra dentro do elemento
+Opacity: de 0 a 1 pode deixar seu elemento levemente ou totalmente transparente. 
+Pode ser usado no rgba tambem, da seguinte forma: rgba(0,0,0, 0.8) por exemplo.
