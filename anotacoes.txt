@@ -159,7 +159,7 @@ line-height = 1em
 
 Total 3.5em}
 
-Obs: procurar saber como funciona o paralaxe.
+Efeito paralaxe: se trata do efeito de elementos que estão mais próximos parecem subir mais rapidamente que os que estão mais longe quando a tela e rolada.
 
 --------------------------------------------------
 Sombras
@@ -171,3 +171,27 @@ box shadow: 0 0 1em #000, inset 0 0 .5em #FFF
 inset: sombra dentro do elemento
 Opacity: de 0 a 1 pode deixar seu elemento levemente ou totalmente transparente. 
 Pode ser usado no rgba tambem, da seguinte forma: rgba(0,0,0, 0.8) por exemplo.
+-------------------------------------------
+Gradientes
+
+background-image: linear-gradient(to bottom, #F00 80%, #000);
+
+Permite colocar um efeito de gradiente no elemento. Controlando em que sentido ele vai ser (para baixo, para cima, para a esquerda etc), e pode ser colocada diversas cores sequencias e tambem o tamanho de cada uma, tudo isso separado por vírgulas.
+
+background-size: 100% 200px
+Permitir definir o espaço que o gradiente ocupará no elemento.
+
+background-repeat: no-repeat;
+Permite fazer com que o comportamento de repetir o background quando há espaço que não foi preenchido, não aconteça.
+
+background-attachment: fixed
+Permite que o background-image permaneça fixo enquanto os elementos passeiam por ele.
+
+background-position: 50% 50%
+Permite definir qual será a posição do background no elemento, pode ser usado tambem valores como center, bottom e etc.
+
+background-image: radial-gradient(yellow, red)
+Gera um efeito de o gradiente estar se dissipando para todos os lados
+
+background-image: radial-gradient(circle at bottom left, yellow, red)
+Permite definir que o radial seja na forma de círculo e que vá para uma direção especificada.

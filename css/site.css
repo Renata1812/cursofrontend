@@ -91,11 +91,14 @@ article footer{
 
 }
 
-article{
+.article-blog{
 
 	padding-bottom: 30px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #ccc;
+	background-image: linear-gradient(to right, transparent, black, transparent);
+	background-size: 100% 1px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
 }
 
 
@@ -193,7 +196,16 @@ em{
 
 #rodape-pagina{
 
-	background-color: rgb(0,0,0,0.8);
+	background-image: radial-gradient(ellipse at left bottom,
+	rgba(60, 29, 61, 0.8) 65%, 
+	rgba(60, 29, 61, 0.8), 
+	black 65%,
+	black 70%, 
+	transparent 70%,
+	transparent);
+	background-size: 25% 100%;
+	background-repeat: no-repeat;
+	background-position: bottom left;
 	color: #F2FFFC;
 	clear: both;
 	position: fixed;
