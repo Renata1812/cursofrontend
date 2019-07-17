@@ -195,3 +195,85 @@ Gera um efeito de o gradiente estar se dissipando para todos os lados
 
 background-image: radial-gradient(circle at bottom left, yellow, red)
 Permite definir que o radial seja na forma de círculo e que vá para uma direção especificada.
+
+--------------------------------------------------
+
+Formas de selecionar elementos no css
+
+Tags
+Classe
+ID
+Pai e filho
+
+~ : depois de; selecionar um elemento depois de um elemento.
++ : logo depois; pega o elemento que está imediatamente depois do elemento em questão.
+> : seleciona o elemento seguinte em forma de hierarquia. Ou seja, funciona de pai para filho, nunca entre irmãos, ou seja, tags juntas no mesmo container.
+
+irmão ~ irmão
+irmão + irmão seguinte
+pai > filho
+
+Esses seletores podem ser combinadas, por exemplo: .noticia > h1 + p
+
+seletor [] : podemos usá-la para selecionar elementos com um determinado valor com o $. 
+ex: [src$=".jpg"]
+Colocamos a classe do elemento que desejamos selecionar, colocamos a indicação de selecionaremos por valor ($) e em seguida colocamos entre aspas o valor em si, que no caso é ".jpg".
+
+Pode ser selecionado tambem através de uma denominação especifica com o ^
+ex: [href^="http://"]
+Seguindo a mesma lógica do outro, mas dessa vez só com os elementos que começam com http://
+
+Ou simplesmente se queremos selecionar uma determinada classe basta usar o seletor com a classe dentro.
+ex: [div].
+--------------------------------------------------
+Pseudoclasses
+
+: - representado por dois pontos
+
+Aplicado em tabelas, onde deseja-se fazer uma tabela listrada, onde um tr é de uma e os seguintes são de outra, usa-se:
+:nth-child()
+
+Nos parêntes você define se quer que seja aplicada as cores em par (even), ou ímpar (odd), ou até mesmo com fórmulas. por exemplo:
+:nth-child(2n) : de dois em dois (par)
+:nth-child(2n+1) : para pegar os ímpares
+:nth-child(3n+1) : pulando de 3 em 3
+:nth-child(3n+2) : pulando de 3 em 3 apartir do 2º filho
+
+antes dos dois pontos especifica-se qual a classe da qual deseja aplicar o efeito. Por exemplo, desejo aplicar somente nas classes de uma tabela, ou seja, tr. Logo a expressão fica:
+
+tr:nth-child(2n)
+
+Caso contrário o efeito será aplicado em todos os elementos que obedecem à expressão.
+Outras pseudoclasses estruturais
+:first-child
+:last-child
+:nth-child - seleciona os dos mesmo tipo inclusive todos os filhos
+:nth-of-type - seleciona somente do mesmo tipo
+
+Há muitas pseuclasses com diferentes funcionalidades. Por eemplo, há a pseuclasse :hover, que é usada para mudar a cor de um elemento quando a seta do mouse se aproxima.
+
+Ex: botão
+
+<a href="..." class= "botão hover">
+
+.botao {
+   border: 8px solid purple;
+}
+.botao:hover{
+   background-color: purple;
+}
+
+--------------------------------------------------
+
+Tabindex : usado para auxiliar os modais que criamos através do box-shadow com o hover (quando o teclado passa em cima). Como nem todos usam o mouse como navegação, mas tambem o celular e o teclado, o tabindex serve para fazer funcionar o efeito mesmo que sem o hover, utilizando o focus.
+Exemplificando:
+
+tabindex="1"
+.css a:focus{
+}
+Quando a seta do mouse se aproximar do botão a cor dele irá mudar para roxo. Isso dá um efeito bacana sem precisar de javascript.
+Outras pseuclasses dinâmicas
+:hover
+:focus
+:active
+:checked

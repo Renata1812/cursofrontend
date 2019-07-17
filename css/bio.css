@@ -11,14 +11,29 @@
 
 }
 
-.fiat{
+.citacao:nth-of-type(odd){
 
 	float: right;
 }
 
-.petrobras{
+.citacao:nth-of-type(even){
 
 	float: left;
+}
+
+.citacao:hover,
+.citacao:focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao:nth-of-type(odd):hover,
+.citacao:nth-of-type(odd):focus {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.citacao:nth-of-type(even):hover,
+.citacao:nth-of-type(even):focus {
+    transform: scale(1.2) rotate(-5deg);
 }
 
 cite{

@@ -50,6 +50,18 @@ main a{
 
 }
 
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus{
+
+	color: red;
+
+}
+
+
+
+
 .h1-principal{
 
 	text-align: center;
@@ -136,6 +148,13 @@ article footer{
 	color: inherit;
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 	text-transform: lowercase;
+}
+
+.navegacao a:hover,
+.navegacao a:focus{
+
+	text-shadow: 0 0 5px pink;
+
 }
 
 
