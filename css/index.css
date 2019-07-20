@@ -203,23 +203,30 @@ body {
 
     background-color: #F2FFFC;
     color: #000;
-    height: 8em;
-    width: 45em;
+    height: 8.9em;
     position: absolute;
-    right: 5em;
+    right: 4em;
+    left: 30%;
     top: 4em;
     padding: 1.5em;
+    display: none;
 
 
 }
 
-.blog .mais-recente {
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post{
+
+    display: block;
+
+}
+
+.blog a:hover,
+.blog a:focus {
     background-color: #F2FFFC;
-    width: 45em;
-}
-
-.blog .mais-recente a {
     color: #F26;
+    width: 485px;
+    
 }
 
 .secao-inicio h2 {
