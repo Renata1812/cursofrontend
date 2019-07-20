@@ -19,6 +19,8 @@ Tags
 
 Para Css:
 
+alt: legenda para deficientes.
+title: legenda que aparece quando o mouse passa em cima.
 padding : aumenta o espaço dentro do elemento
 
 border: atribui bordas ao elemento. Deve-se definir o tamanho em PX, a cor (ex: #FFFFFF) e o tipo, que pode ser solid (linha contínua), dashed (tracejada grande), dotted (tracejada pequena).
@@ -35,6 +37,9 @@ display: usado para alinhar um elemento (inline) ou empilhá-los (block). Há tamb
 text-transform: uppercase/lowercase; = deixa o texto todo em maiúsculo/minúsculo.
 
 text-ident = desloca o texto para a direita ou esquerda com o valor que vc quiser
+
+font-weight: bold = deixa o texto em negrito.
+
 
 float: permite que o elemento "flutue" para qualquer lado sem restrições de conceito
 obs: todos os floats que colocamos em sequência formam uma linha
@@ -277,3 +282,21 @@ Outras pseuclasses dinâmicas
 :focus
 :active
 :checked
+--------------------------------------------------
+
+Pseudoelementos
+
+p:first-letter : faz com que a primeira letra de um parágrafo seja maior.
+
+class:before / class:after
+Tem como função abrir espaço em pseudoelemento para colocar algo antes ou depois do texto em questão. Com o content é possível informar qual caractere ou imagem será colocado.
+
+blockquote:before{
+       content: '"';
+}
+
+Há diversas possibilidades, apartir disso é possível fazer tudo, garantindo um html ainda mais limpo.
+
+data- : podemos criar qualquer atributo sem que ele fique invalido só utilizando o data-escolhaonome=" " na frente. No caso do curso utilizamos para personalizar as legendas e evitar que entrasse em conflito com o title.
+e no css coloque: content: attr(escolhaonome).
+ 

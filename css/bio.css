@@ -11,6 +11,33 @@
 
 }
 
+div > p:first-letter{
+
+	font-size: 2em;
+	color: #3C1D3D;
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+	margin-right: .2em;
+	line-height: 1;
+
+}
+
+blockquote > p{
+
+	position: relative;
+
+}
+
+blockquote:before{
+
+	content: '"';
+	position: absolute;
+	font-size: 10em;
+	color: #bbb;
+	line-height: .8;
+
+}
+
 .citacao:nth-of-type(odd){
 
 	float: right;
