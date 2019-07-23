@@ -299,4 +299,12 @@ Há diversas possibilidades, apartir disso é possível fazer tudo, garantindo um h
 
 data- : podemos criar qualquer atributo sem que ele fique invalido só utilizando o data-escolhaonome=" " na frente. No caso do curso utilizamos para personalizar as legendas e evitar que entrasse em conflito com o title.
 e no css coloque: content: attr(escolhaonome).
- 
+ --------------------------------------------------
+
+Formulários
+
+Pattern: podemos especificar qual padrão deve seguir um determinado campo, para que o usuário preencha-o corretamente. Especificamos esse padrão usando uma linguagem chamada expressão regular. Para garantir que um campo só tenha letras e números, por exemplo, podemos fazer:
+
+<input pattern="[A-Za-z0-9]{8,}">
+
+Entre colchetes é informado qual o mínimo de caracteres que aquele campo deve ter.

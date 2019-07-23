@@ -1,0 +1,62 @@
+legend,
+label [for="mensagem"]{
+
+	font-weight: bold;
+    margin-top: 1em;
+
+}
+
+
+.input-comum{
+
+	border: 3px solid #ccc;
+	padding: 5px;
+	font-family: "Crimson Text", "Times New Roman", sans-serif;
+
+}
+
+.input{
+
+	width: 100%;
+
+}
+
+
+.foco:hover,
+.foco:focus{
+
+
+	background-color: #FFFFE0;
+
+}
+
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+
+input[value="outro"] ~ input {
+    display: none;
+}
+
+input[value="outro"]:checked ~ input {
+    display: inline;
+}
+
+.botao{
+
+	float: right;
+	border: none;
+	padding: 10px;
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+	font-size: 2ch;
+
+}
+
+.botao:hover,
+.botao:focus{
+
+	background-color: #8C1D3D;
+
+}
