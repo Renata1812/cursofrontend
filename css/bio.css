@@ -68,3 +68,47 @@ cite{
 	font-style: italic;
 	float: right;
 }
+
+table{
+
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-collapse: separate;
+	border-spacing: 0.25em;
+
+}
+
+th, td{
+
+	padding: 1em;
+
+}
+
+td{
+
+	background-color: #851944;
+	color: white;
+	font-weight: bold;
+
+}
+
+thead{
+
+	background-color: #3C1D3D;
+	color: white;
+	font-weight: bold;
+
+}
+tbody > th{
+
+	background-color: #EEE;
+
+}
+
+.estudando{
+
+	font-style: italic;
+	text-align: center;
+	vertical-align: middle;
+
+}

@@ -308,3 +308,40 @@ Pattern: podemos especificar qual padrão deve seguir um determinado campo, para 
 <input pattern="[A-Za-z0-9]{8,}">
 
 Entre colchetes é informado qual o mínimo de caracteres que aquele campo deve ter.
+
+--------------------------------------------------
+
+Propriedade calc
+
+É possível usá-la para cálcular tamanho, quanto um elemento deve ter de tamanho em relação ao outro, e etc.
+Ex: width: calc(100% - 2em);
+
+--------------------------------------------------
+Tabelas
+
+Estrutura padrão:
+
+<table>
+  <thead>
+     <tr>
+        <td> Título 1 </td>
+        <td> Título 2 </td>
+     </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        <td> Conteúdo 1 </td>
+        <td> Conteúdo 2 </td>
+    </tr>
+  </tbody>
+
+  <tfooter>
+    <tr> Índice 1 </tr>
+    <tr> Índice 2 </tr>
+  </tfooter>
+</table>
+
+Tag th: é uma alternativa para o td. Ambos são usados para marcar células.
+border-collapse: separate; - para separar as células, deixar de mantê-las grudadas.
+border-spacing: 0px; - adiciona espaço entre as células; 

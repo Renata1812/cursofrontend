@@ -15,12 +15,18 @@ label [for="mensagem"]{
 
 }
 
-.input{
+.input[type="text"],
+.input[type="email"],
+textarea {
 
-	width: 100%;
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
 
 }
-
 
 .foco:hover,
 .foco:focus{
@@ -31,7 +37,7 @@ label [for="mensagem"]{
 }
 
 input:invalid {
-    box-shadow: 0 0 3px red;
+    box-shadow: 0 0 7px red;
 }
 
 input[value="outro"] ~ input {
@@ -58,5 +64,52 @@ input[value="outro"]:checked ~ input {
 .botao:focus{
 
 	background-color: #8C1D3D;
+	margin-bottom: 0;
+
+}
+
+.icone{
+
+	position: relative;
+
+}
+
+.icone::after{
+
+	content: '';
+	background-repeat: no-repeat;
+	background-color: #851944;
+	background-position: center center;
+	background-size: 50% 50%;
+	width: 2em;
+	height: 2em;
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+
+}
+
+.input[type="text"],
+.input[type="email"]{
+
+	position: relative;
+	left: 2em;
+	width: calc(100% - 2em);
+	margin-top: 0;
+
+}
+
+.icone[for="nome"]::after{
+
+
+	background-image: url(../imagens/usuario.png);
+
+}
+
+.icone[for="email"]::after{
+
+
+	background-image: url(../imagens/email.png);
 
 }
