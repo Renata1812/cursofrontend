@@ -33,6 +33,30 @@ body {
     font-size: 400%;
     color: #D5447E;
     position: absolute;
+    -webkit-animation: aparece 2s;
+    animation: aparece 2s;
+
+}
+
+@-webkit-keyframes aparece{
+
+    from{
+
+        opacity: 0;
+        transform: scale(0.001);
+
+    }
+
+}
+
+@keyframes aparece{
+
+    from{
+
+        opacity: 0;
+        transform: scale(0.001);
+
+    }
 
 }
 
@@ -64,6 +88,35 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
+
+    animation: aparece .5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    -webkit-animation: aparece .5s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes aparece{
+
+    from{
+
+        opacity: 0;
+        transform: scale(0.001);
+
+    }
+
+}
+
+@-webkit-keyframes aparece{
+
+    from{
+
+        opacity: 0;
+        transform: scale(0.001);
+
+    }
+
 }
 
 .eficiencia {
@@ -179,6 +232,51 @@ body {
     font-size: 4em;
     display: inline-block;
     transform: rotate(-5deg) skew(-10deg);
+    position: relative;
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    -webkit-animation: flutua 1s infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes flutua{
+
+    from{
+
+        top: -5px;
+
+    }
+
+    to{
+
+        top: 5px;
+
+    }
+
+}
+
+@-webkit-keyframes flutua{
+
+    from{
+
+        top: -5px;
+
+    }
+
+    to{
+
+        top: 5px;
+
+    }
+
+}
+
+.saudacao em:hover{
+
+    animation-play-state: paused;
+
 }
 
 .botao-index {
@@ -191,6 +289,15 @@ body {
     margin: 2em auto;
     display: block;
     text-align: center;
+    text-decoration: none;
+}
+
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
+    transition: .5s;
 }
 
 .secao-inicio {
@@ -257,12 +364,12 @@ body {
 }
 
 .trabalhos ul {
-    overflow: hidden;
     border: .5em solid black;
+    display: flex;
 }
 
 .trabalhos li {
-    float: left;
+    flex: 1;
     width: 33.333%;
 }
 

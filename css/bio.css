@@ -8,6 +8,15 @@
 	box-sizing: border-box;
 	border-bottom-color: #333;
 	border-right-color: transparent;
+	transition: transform 1s, box-shadow 1s;
+	transition-delay: 1s, 0s;
+
+}
+
+.citacao:focus,
+.citacao:hover{
+
+	transition-delay: 0s, 1s;
 
 }
 
