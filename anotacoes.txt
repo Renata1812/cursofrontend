@@ -345,3 +345,50 @@ Estrutura padrão:
 Tag th: é uma alternativa para o td. Ambos são usados para marcar células.
 border-collapse: separate; - para separar as células, deixar de mantê-las grudadas.
 border-spacing: 0px; - adiciona espaço entre as células; 
+
+--------------------------------------------------
+Transition
+
+transition: transform 1s, box-shadow 4s;
+
+Vai fazer com que a propriedade especificada seja aplicada lentamente ao decorrer de 1 segundo.
+
+transition-delay: transform 0s, box-shadow 3s;
+
+O delay define quanto tempo o efeito do transition irá demorar para acontecer.
+
+Há uma suavização no efeito do transition que pode ser regulada com, linear (sem suavização), ease-in (suavização no começo), ease-out (suavização no final), ease-in-out (suavização no começo e no final) e infinite (acontecerá sem parar).
+
+ANIMAÇÕES QUE NÃO DEPENDEM DE INTERAÇÃO DO USUÁRIO
+
+Ex: fazer com que o título principal de uma página apareça aos poucos.
+
+h1{
+    -webkit-animation: aparece 5s ease-in
+}
+@-webkit-keyframes aparece{
+     0%{
+          opacity: 0;
+     }
+
+     100%{
+          opacity: 1;
+    }
+}
+
+Com a propriedade animation você consegue construir uma animação. O keyframes especifica a propriedade. O 0% e 100% (tambem representado por from e to) significam como vai começar, de onde irá partir e como irá terminar, onde irá chegar.
+Caso queira que o efeito da animação aconteça de forma contínua, a propriedade alternate no animation-direction é a melhor opção. 
+
+animation-direction: alternate;
+
+E para que ela aconteça partindo do começo usa-se:
+
+animation-timing-function: ease-in;
+
+Para que em determinada função o efeito pare, usa-se:
+
+animation-play-state: paused;
+
+--------------------------------------------------
+
+Não aprendi nada sobre flexbox, deveria pesquisar.
