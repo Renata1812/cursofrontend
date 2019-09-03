@@ -209,7 +209,6 @@ Tags
 Classe
 ID
 Pai e filho
-
 ~ : depois de; selecionar um elemento depois de um elemento.
 + : logo depois; pega o elemento que está imediatamente depois do elemento em questão.
 > : seleciona o elemento seguinte em forma de hierarquia. Ou seja, funciona de pai para filho, nunca entre irmãos, ou seja, tags juntas no mesmo container.
