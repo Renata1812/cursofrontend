@@ -1,0 +1,16 @@
+Javascript
+
+<script>
+     alert("Olá mundo");
+     console.log("Eu estou aqui");
+</script>
+
+o alert irá exibir um mensagem em forma de pop-up na página.
+o console.log irá exibir a mensagem em seu parâmetro no console do desenvolvedor.
+
+- document e document.querySelector -
+O document serve para mostrar a estrutura do seu código no console.log. Ela é a representação do DOM ou Document Object Model, que é a representação da nossa página HTML para o navegador, que é utilizada pelo Javascript para manipular a página.
+O querySelector é útil para buscar e selecionar uma tag específica no seu documento.
+
+Obs: É importante manter a tag script e o seu conteúdo no final da página. para que em nenhum momento dê "nulo" devido a alguma falha de carregamento da página.
+
