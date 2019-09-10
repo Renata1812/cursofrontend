@@ -19,3 +19,41 @@ var.toFixed(numerocasadeciaml) - permite escolher quantas casas decimais prefere
 
 objeto.classList.add("nova-classe") - esta função permite criar uma nova classe no objeto selecionado. é muito útil para aplicar estilos do css em elementos.
 
+Atrelando eventos a objetos
+
+nomeobjeto.addEventListener("click", mostraMensagem); +
+function mostraMensagem(){
+    console.log("Fui clicado");
+}
+
+Este pequeno código atribui uma ação ao objeto "nomeobjeto" quando ele é clicado, a ação em questão é a função mostraMensagem que é executado mostrando a mensagem "Fui clicado" no console do desenvolvedor.
+
+event.preventDefault() - faz com que o comportamento padrão de um objeto pare de funcionar para que você diga o que ele deve fazer. O button foi o exemplo usado.
+
+var coluna = document.createElement("td"); - permite você criar um novo elemento da sua escolha (dentro dos parênteses) no javascript
+
+linha.appendChild(coluna) - permite atribuir o elemento que você acabou de criar a algum objeto já criado em seu HTML.
+
+Selecionar os valores dos campos de um questionário:
+
+var form = document.querySelector("#formulario");
+ var info1 = form.name.value
+
+- Crie a variavel da informação, coloque o nome da variavel da qual vc esta pegando as informações. coloque o "name" da informação e em seguida "value".
+Obs: ao que tudo indica esse tipo de seleção é uma característica exclusiva da tag form.
+
+Declaração de objetos
+
+var xicara = {
+    cor: "azul",
+    peso: 125,
+    tipo: "chá"
+};
+
+Acessamos as informações do objeto da seguinte forma:
+
+xicara.cor // azul
+xicara.peso // 125
+xicara.tipo // chá
+xicara.modelo // undefined, este objeto não possui a propriedade modelo
+
