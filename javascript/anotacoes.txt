@@ -57,3 +57,17 @@ xicara.peso // 125
 xicara.tipo // chá
 xicara.modelo // undefined, este objeto não possui a propriedade modelo
 
+innerHTML
+
+Com a propriedade innerHTML, podemos editar obter o conteúdo HTML (HTML interno) de um elemento.
+
+Para editar o HTML interno, como o innerHTML é uma propriedade, utilizamos um sinal de igual (=). Fazemos:
+
+ObjetoDeUmElementoHTML.innerHTML = "Novo conteúdo"
+
+E para obter o HTML interno, fazemos:
+
+ObjetoDeUmElementoHTML.innerHTML
+
+O seu retorno será todo o conteúdo HTML, tanto tags, atributos, classes, etc, no formato de uma String.
+
