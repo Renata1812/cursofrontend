@@ -8,7 +8,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     var erros = validaPaciente(paciente);
 
-    if (erros.length > 0) {
+    if(erros.length > 0) {
 
         exibeMensagensDeErro(erros);
         return;
@@ -94,6 +94,8 @@ function validaPaciente(paciente){
 	if(!validaAltura(paciente.altura)){
 		erros.push("Altura inválida");
 	}
+
+	return erros;
 
 }
 

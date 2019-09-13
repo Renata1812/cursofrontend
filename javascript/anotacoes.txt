@@ -71,3 +71,16 @@ ObjetoDeUmElementoHTML.innerHTML
 
 O seu retorno será todo o conteúdo HTML, tanto tags, atributos, classes, etc, no formato de uma String.
 
+this.remove(); - remove o dono do evento em questão.
+
+var expressao = new RegExp() - mecânismo de busca no javascript que funciona da seguinte forma: 
+
+- o primeiro parâmetro que devemos passar para o construtor é o padrão (o texto da expressão regular, o que deve ser buscado)
+- o segundo parâmetro são uma ou mais flags (representando como queremos que a expressão regular busque).
+- Por exemplo, podemos definir que não queremos que haja distinção entre letras maiúsculas e minúsculas, através da flag i.
+
+var xhr = new XMLHttpRequest();
+
+O objeto XMLHttpRequest é quem é responsável por fazer requisições HTTP assíncronas com Javascript. Apesar de ter o XML no nome hoje em dia este objeto pode trafegar diversos outros tipos de dados além do XML, este nome só se manteve devido a um legado histórico.
+
+
